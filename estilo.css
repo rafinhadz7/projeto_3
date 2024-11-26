@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+    font-weight: 400px;
+
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/fundo4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 6%;
+
+}
+
+form{
+    background: rgba(183, 197, 201, 0.736);
+    max-width: 500px;
+    height: 450px;
+    padding: 40px;
+    border-radius: 10px;
+
+}
+
+form h1{
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(156, 10, 240);
+    font-size: 22px;
+
+}
+
+form p{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+form .input-single{
+    position: relative;
+    margin: 30px 0;
+
+}
+
+form .input-single label{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    cursor: text;
+    transition: all 0.5s;
+    color: rgb(233, 58, 131);
+
+}
+
+form .input-single .input{
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid rgb(206, 65, 225);
+    padding: 5px;
+    outline: 0;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: gainsboro;
+}
+
+form .input-single .input:focus{
+    border-bottom: 2px solid rgb(212, 17, 163);
+}
+
+    form .input-single .input:focus ~ label,
+    form .input-single .input:valid ~ label{
+        transform: translateY(-25px);
+        font-size: 15px;
+        color: rgb(48, 49, 49);
+    }
+
+    .btn{
+        width: 100%;
+        text-align: center;
+    }
+
+    form input[type="submit"]{
+        padding: 10px 40px;
+        border: 0;
+        border-radius: 10px;
+        background-color: rgb(157, 96, 238);
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        cursor: pointer;
+    }
